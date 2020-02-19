@@ -1,0 +1,38 @@
+A functional interface has a single abstract methods.
+
+default methods can be used in interfaces
+
+As long as we have a single abstract method in our interface,
+we can refer to it as a functional interface.
+
+Before lambda there were anonymous inner classes.
+
+  greet(new Printer() {
+            @Override
+            public void printMessage(String message) {
+                System.out.println("anonymous function");
+            }
+        });
+    }
+
+For lambda functions, we only use parenthesis when we have multiple parameters or
+if we don't have any.
+
+In lambda functions, this refers to the enclosing object.
+
+Look over variable capture once more.
+
+
+reference method directly syntax
+class or object then :: method with out ()
+
+Method Reference let us build compact lambda functions
+
+Build in functional Interface
+-----------------------------
+Consumers - takes in single argument and returns no result.
+Supplier - reprenesnts an operation that takes no input and returns
+Function - Map a value to a different value
+Predicate - takes in object and checks to see if it satisfies a condition
+
+andThen() lets you chain consumers
